@@ -45,6 +45,14 @@ export PATH=$PATH:/usr/local/go/bin:$GOPATH/bin
 
 source ~/.profile
 
+sudo vim ~/.bashrc
+
+# At the end of the file, add this line:
+export GOPATH=$HOME/dev/repos
+export PATH=$PATH:/usr/local/go/bin:$GOPATH/bin
+
+source ~/.bashrc
+
 # install Node.js and npm
 sudo apt update
 sudo apt install nodejs

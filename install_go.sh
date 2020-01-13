@@ -30,6 +30,14 @@ export PATH=$PATH:$GOROOT/bin:$GOPATH/bin
 # Next, refresh your profile by running:
 source ~/.profile
 
+## these paths should be changed in ~/.bashrc file as well
+sudo vim ~/.bashrc
+
+export GOPATH=$HOME/work
+export PATH=$PATH:/usr/local/go/bin:$GOPATH/bin
+
+source ~/.bashrc
+
 
 ## testing installation
 mkdir $HOME/work
@@ -57,5 +65,5 @@ go install hello
 hello
 # see where the compiled hello binary is installed
 which hello
-# /home/shadhini/work/bin/hello
+# /home/shadhini/dev/repos/bin/hello
 
